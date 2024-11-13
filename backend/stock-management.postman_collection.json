@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "b5c29241-b0a9-4f66-97e0-de9a30c05c6d",
+		"name": "stock-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4060097"
+	},
+	"item": [
+		{
+			"name": "items",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/items",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Items",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"item_code\" : \"010104001\",\r\n    \"name\" : \"Beras\" , \r\n    \"uom\": \"KG\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/items",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"items"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "stock",
+			"item": [
+				{
+					"name": "Get Stock Ledger",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/stock-ledger",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"stock-ledger"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Stock Entry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/stock-entry",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"stock-entry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Batch Items (For OUT)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/batch-items",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"batch-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Stock Entry",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"entry_id\": \"SE003\",\r\n  \"tanggal\": \"2024-11-11\",\r\n  \"type\": \"IN\",\r\n  \"details\": [\r\n    {\r\n      \"item_code\": \"010101001\",\r\n      \"batch_id\": \"010101001003\",\r\n      \"expiry_date\": \"2025-06-01\",\r\n      \"qty\": 50\r\n    },\r\n    {\r\n      \"item_code\": \"010102001\",\r\n      \"batch_id\": \"010102001004\",\r\n      \"expiry_date\": \"2025-12-15\",\r\n      \"qty\": 40\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/stock-entry",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"stock-entry"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
