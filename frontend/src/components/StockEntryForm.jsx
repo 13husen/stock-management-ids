@@ -92,9 +92,9 @@ const StockEntryForm = ({ onItemAdded }) => {
             onChange={(e) => handleBatchChange(e.target.value)}
             className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
           >
-            <option value="">Select Batch Item</option>
+            <option value="" key={"empty"}>Select Batch Item</option>
             {batchItems.map((item) => (
-              <option key={item.id} value={item?.batch_id}>
+              <option key={item.batch_id} value={item?.batch_id}>
                 {item?.batch_id} - {item?.item_code} - {item?.item_name}
               </option>
             ))}

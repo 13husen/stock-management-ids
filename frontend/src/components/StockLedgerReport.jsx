@@ -29,8 +29,8 @@ const StockLedgerReport = () => {
           </tr>
         </thead>
         <tbody>
-          {stockEntries.map((entry) => (
-            <tr key={entry.item_code + entry.create_date}>
+          {stockEntries.map((entry,index) => (
+            <tr key={entry.item_code + entry.create_date + index}>
               <td className="border px-4 py-2">{formatDate(entry.create_date)}</td>
               <td className="border px-4 py-2">{entry.item_code}</td>
               <td className="border px-4 py-2">{entry.item_name}</td>

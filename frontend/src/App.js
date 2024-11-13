@@ -7,10 +7,10 @@ import StockLedgerPage from "./pages/StockLedgerPage";
 const App = () => {
   return (
     <Router>
-      <nav class="flex items-center justify-between flex-wrap bg-[#424242] p-6 shadow-md">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <nav className="flex items-center justify-between flex-wrap bg-[#424242] p-6 shadow-md">
+        <div className="flex items-center flex-shrink-0 text-white mr-6">
           <svg
-            class="fill-current h-8 w-8 mr-2"
+            className="fill-current h-8 w-8 mr-2"
             width="54"
             height="54"
             viewBox="0 0 54 54"
@@ -19,10 +19,10 @@ const App = () => {
             <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
           </svg>
         </div>
-        <div class="block lg:hidden">
-          <button class="flex items-center px-3 py-2 border rounded text-gray-300 border-teal-400 hover:text-white hover:border-white">
+        <div className="block lg:hidden">
+          <button className="flex items-center px-3 py-2 border rounded text-gray-300 border-teal-400 hover:text-white hover:border-white">
             <svg
-              class="fill-current h-3 w-3"
+              className="fill-current h-3 w-3"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -31,8 +31,8 @@ const App = () => {
             </svg>
           </button>
         </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="text-sm lg:flex-grow">
+        <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div className="text-sm lg:flex-grow">
             <Link
               to="/"
               className="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4"
