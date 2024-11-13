@@ -5,6 +5,11 @@ Stock management for create item and stock entry, includes dashboard for display
  -  Backend : ExpressJS, MySQL.
  -  Frontend : Javascript, React, Tailwind.
 
+# Note :
+
+ 1. Please Check the SQL file inside the backend project
+ 2. Please check to Postman collection inside the backend project.
+
 # Front End setup 
 
  - run `npm install`
